@@ -11,7 +11,7 @@ const wordsWithHints = {
     "performance": "Teste para verificar a velocidade e eficiência",
     "usability": "Teste para avaliar a facilidade de uso",
     "black box": "Teste focado nas funcionalidades sem conhecer o código interno",
-    "static analysis": "Análise do código sem executá-lo",
+    "static": "Análise do código sem executá-lo", 
     "white box": "Teste baseado no conhecimento detalhado do código interno",
     "debug": "Processo de identificar e remover erros do código",
     "smoke": "Teste inicial para verificar se as funções básicas estão funcionando",
@@ -34,7 +34,7 @@ const words = [
     "performance",
     "usability",
     "black-box",
-    "static",
+    "static", 
     "white-box",
     "debug",
     "smoke",
@@ -93,22 +93,22 @@ document.addEventListener("DOMContentLoaded", () => {
             hangmanImage.style.opacity = 0; // Reset opacity for animation
             switch (mistakes) {
                 case 1:
-                    hangmanImage.src = `../images/head.png`;
+                    hangmanImage.src = `assets/images/head.png`;
                     break;
                 case 2:
-                    hangmanImage.src = `../images/body.png`;
+                    hangmanImage.src = `assets/images/body.png`;
                     break;
                 case 3:
-                    hangmanImage.src = `../images/left_arm.png`;
+                    hangmanImage.src = `assets/images/left_arm.png`;
                     break;
                 case 4:
-                    hangmanImage.src = `../images/right_arm.png`;
+                    hangmanImage.src = `assets/images/right_arm.png`;
                     break;
                 case 5:
-                    hangmanImage.src = `../images/left_leg.png`;
+                    hangmanImage.src = `assets/images/left_leg.png`;
                     break;
                 case 6:
-                    hangmanImage.src = `../images/right_leg.png`;
+                    hangmanImage.src = `assets/images/right_leg.png`;
                     setTimeout(() => {
                         showLoseMessage();
                     }, 500); // Adiciona um pequeno atraso para garantir que a imagem seja atualizada
