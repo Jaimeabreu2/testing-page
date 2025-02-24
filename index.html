@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechForca</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="startScreen">
         <h1>TechForca</h1>
-        <p>Aprenda de uma forma divertida!</p>
+        <p>Aprenda Inglês enquanto explora conceitos de Engenharia de Software!</p>
         <button id="startButton">Start</button>
     </div>
     <div id="gameScreen" style="display: none;">
         <h1>TechForca</h1>
         <button id="quitButton">QUIT</button>
         <div id="hangmanImage">
-            <img src="../images/forca.png" alt="Hangman" id="hangman">
+            <img src="assets/images/forca.png" alt="Hangman" id="hangman">
         </div>
         <div id="hint"></div>
         <div id="wordDisplay">_ _ _ _ _</div>
         <div id="letters"></div>
     </div>
-    <audio id="backgroundMusic" src="../audio/background-music.mp3" loop></audio>
-    <audio id="gameOverSound" src="../audio/game-over.wav"></audio>
-    <audio id="congratulationsSound" src="../audio/congratulations.wav"></audio>
-    <script src="../js/index.js"></script>
+    <audio id="backgroundMusic" src="assets/audio/background-music.mp3" loop></audio>
+    <audio id="gameOverSound" src="assets/audio/game-over.wav"></audio>
+    <audio id="congratulationsSound" src="assets/audio/congratulations.wav"></audio>
+    <script src="assets/js/index.js"></script>
     <script>
         document.getElementById('startButton').addEventListener('click', function() {
             var audio = document.getElementById('backgroundMusic');

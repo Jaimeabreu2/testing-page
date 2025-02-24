@@ -1,5 +1,5 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: Arial, sans-serif; /* Fonte legível */
     text-align: center;
     background-color: #f0f0f0;
     margin: 0;
@@ -16,6 +16,7 @@ h1 {
     font-size: 48px; /* Aumente o tamanho da fonte */
     color: #228B22; /* Verde floresta */
     text-shadow: 3px 3px #006400, 5px 5px #000000; /* Sombra verde escuro e preta */
+    font-family: Arial, sans-serif; /* Fonte legível */
 }
 
 #wordDisplay {
@@ -59,6 +60,11 @@ h1 {
     margin: 5px; /* Ajuste a margem conforme necessário */
     color: #000; /* Cor preta */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para contraste */
+    font-family: Arial, sans-serif; /* Fonte legível */
+}
+
+#startScreen p {
+    font-family: Arial, sans-serif; /* Fonte legível */
 }
 
 @keyframes fadeIn {
@@ -126,13 +132,13 @@ h1 {
 
 #quitButton {
     position: absolute;
-    top: 20px;
+    top: 40px; /* Mover um pouco para baixo */
     right: 20px;
     background-color: red;
     border: 3px solid darkred;
     color: white;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+    padding: 3px 8px; /* Diminuir o padding */
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
@@ -149,4 +155,38 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+/* Media queries para tornar o jogo responsivo em telas de celular */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Reduzir o tamanho da fonte */
+    }
+
+    #wordDisplay {
+        font-size: 36px; /* Reduzir o tamanho da palavra */
+    }
+
+    #letters button {
+        padding: 10px; /* Reduzir o tamanho dos botões */
+        font-size: 18px; /* Reduzir o tamanho da fonte dos botões */
+    }
+
+    #hangman {
+        width: 200px; /* Reduzir a largura da imagem */
+    }
+
+    #hint {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+
+    #startButton {
+        font-size: 18px; /* Reduzir o tamanho da fonte */
+        padding: 10px 20px; /* Reduzir o padding */
+    }
+
+    #quitButton {
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+        padding: 3px 8px; /* Reduzir o padding */
+    }
 }
